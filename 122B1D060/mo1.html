@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style001.css" rel="stylesheet" />
+    <title>Mathematical_Optimazation_Theory</title>
+  </head>
+  <body>
+    <header>
+      <h3>Unit 1 : Linear Programming</h3>
+      <h4>unit 1 pdf :</h4>
+      <iframe
+        src="file:///Users/vedantsonawane/Downloads/Linear_Programming_for_Optimization.pdf"
+        width="800"
+        height="500"
+        >Unit 0ne pdf
+      </iframe>
+    </header>
+    <article>
+      <h4>Simplex Method</h4>
+      <p>
+        The simplex algorithm is the original and still one of the most widely
+        used methods for solving linear maximization problems. However, to apply
+        it, the origin (all variables equal to 0) must be a feasible point. This
+        condition is satisfied only when all the constraints (except
+        non-negativity) are less-than constraints and with positive constant on
+        the right-hand side. The Big M method introduces surplus and artificial
+        variables to convert all inequalities into that form. The "Big M" refers
+        to a large number associated with the artificial variables, represented
+        by the letter M.
+      </p>
+      <h4>Steps :</h4>
+      <ol>
+        <li>
+          Multiply the inequality constraints to ensure that the right hand side
+          is positive.
+        </li>
+        <li>
+          If the problem is of minimization, transform to maximization by
+          multiplying the objective by −1.
+        </li>
+        <li>
+          For any greater-than constraints, introduce surplus si and artificial
+          variables ai (as shown below).
+        </li>
+        <li>
+          Choose a large positive Value M and introduce a term in the objective
+          of the form −M multiplying the artificial variables.
+        </li>
+        <li>
+          For less-than or equal constraints, introduce slack variables si so
+          that all constraints are equalities.
+        </li>
+        <li>Solve the problem using the usual simplex method.</li>
+      </ol>
+      <img src="simplex.jpeg" alt="Simplex method" width="600" />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/?v=01Iy2ZHOmNg"
+      ></iframe>
+
+      <h4>Big M Method</h4>
+      <p>
+        If an LP has any ≥ or = constraints, a starting BFS may not be readily
+        apparent. When a BFS is not readily apparent, the Big M method or the
+        two phase simplex method may be used to solve the problem
+      </p>
+      <p>
+        The Big M method is a version of the Simplex Algorithm that first finds
+        a BFS by adding "artificial" variables to the problem. The objective
+        function of the original LP must, of course, be modified to ensure that
+        the artificial variables are all equal to 0 at the conclusion of the
+        simplex algorithm.
+      </p>
+      <h4>Steps :</h4>
+      <ol>
+        <li>
+          Modify the constraints so that the RHS of each constraint is
+          nonnegative (This requires that each constraint with a negative RHS be
+          multiplied by -1. Remember that if you multiply an inequality by any
+          negative number, the direction of the inequality is reversed!). After
+          modification, identify each constraint as ≥ , ≤ or = constraint.
+        </li>
+        <li>
+          Convert each inequality constraint to standard form .If constraint i
+          is ≤ constraint, we add a slack variable si; and if constraint i is ≥
+          constraint, we subtract an excess (surplus) variable ei
+        </li>
+        <li>
+          Add an artificial variable ai to the constraints identified as ≥ or =
+          constraints at the end of Step 1. Also add the sign restriction ai ≥ 0
+        </li>
+        <li>
+          Let M denote a very large positive number. If the LP is a min problem,
+          add (for each artificial variable) Mai to the objective function
+          (before equal to 0). If the LP is a max problem, add (for each
+          artificial variable) -Mai to the objective function(before equal to
+          0).
+        </li>
+        <li>
+          Since each artificial variable will be in the starting basis, all
+          artificial variables must be eliminated from objective row before
+          beginning the simplex. Now solve the transformed problem by the
+          simplex (In choosing the entering variable, remember that M is a very
+          large positive number!).
+        </li>
+      </ol>
+
+      <img src="m0002.jpeg" rel="big m method" width="600" />
+      <a href="https://www.youtube.com/watch?v=61lkRMXne2U">
+        Big M Method Video &rarr;
+      </a>
+      <h4>Problems on Unit one : ---></h4>
+      <iframe
+        src="file:///Users/vedantsonawane/Desktop/problem.pdf"
+        width="800"
+        height="500"
+      >
+      </iframe>
+      <a href="index.html">Back to Main Page &rarr;</a>
+    </article>
+
+    <footer>Copyright &copy; 2027 by The VedCorp</footer>
+  </body>
+</html>
