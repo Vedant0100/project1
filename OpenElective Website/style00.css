@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4 {
+  color: #1098ad;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 40px;
+}
+header {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  background-color: #f4f5f5;
+  border-top: 10px solid #1098ad;
+  border-bottom: 10px solid #1098ad;
+}
+article {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #444;
+}
+footer {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+header h1 {
+  font-style: italic;
+  font-weight: bolder;
+  color: #098bf6;
+  text-decoration: underline;
+}
+aside {
+  background-color: #f4f5f5;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+aside ol {
+  list-style: none;
+}
+
+a {
+  color: #1098ad;
+}
+a:hover {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+/* {
+  
+  margin: 0;
+  padding: 0;
+}*/
+
