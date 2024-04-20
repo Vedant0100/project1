@@ -1,0 +1,30 @@
+header h3 {
+  background-color: #f4f5f5;
+  border-top: 5px solid #1098ad;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #1098ad;
+  text-transform: uppercase;
+}
+article {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #444;
+}
+article h4 {
+  font-size: 25px;
+  color: #1098ad;
+  text-transform: uppercase;
+}
+footer {
+  font-size: 22px;
+  font-family: sans-serif;
+  background-color: #f4f5f5;
+  border-top: 5px solid #1098ad;
+}
